@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<watchface device_name="Gear S3, Gear Sport, Galaxy Watch, Galaxy Watch Active" height="360" name="watchface.xml" schema_version="1.5" screen_type="1" version="1.8.0" width="360">
+    <root height="360" type="normal" width="360" x="0" y="0">
+        <image height="397" id="Background" locked="true" name="Galaxy_Watch_Background.png" width="397" x="-18" y="-18"/>
+        <text a="245" alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-Bold-4.47.0" g="128" height="119" id="Text" locked="true" r="0" size="28" source="none" style="1" text="nora@watch" width="287" x="-22" y="23"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Time" locked="true" r="255" size="28" source="none" style="0" text="[TIME]" width="110" x="15" y="80"/>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-Bold-4.47.0" g="128" height="119" id="Text2" locked="true" r="0" size="28" source="none" style="1" text="nora@watch" width="287" x="-22" y="226"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Date" locked="true" r="255" size="28" source="none" style="0" text="[DATE]" width="110" x="15" y="115"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Battery" locked="true" r="255" size="28" source="none" style="0" text="[BATT]" width="110" x="15" y="150"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Steps" locked="true" r="255" size="28" source="none" style="0" text="[STEP]" width="110" x="16" y="185"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Heartrate" locked="true" r="255" size="28" source="none" style="0" text="[L_HR]" width="110" x="16" y="220"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Text_Part" locked="true" r="255" size="28" source="none" style="1" text=":~$ now" width="110" x="182" y="47"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Text2_Part" locked="true" r="255" size="28" source="none" style="1" text=":~$" width="110" x="154" y="251"/>
+        <digitalclock alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="215" height="70" id="Clock Function" locked="true" r="255" size="27" style="1" text="HH:mm:ss a" width="232" x="79" y="80"/>
+        <digitalclock alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="144" height="70" id="Date Function" locked="true" r="30" size="27" style="1" text="EEE MMM d yyyy" width="220" x="114" y="115"/>
+        <text a="250" alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Steps Function" locked="true" postfix=" steps" r="255" size="27" source="pedometer.step" style="1" text="Text" text_width="5" width="166" x="115" y="185"/>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Heartrate Function" locked="true" postfix=" bpm" r="255" size="27" source="heartrate.recent" style="1" text="Text" text_width="3" width="110" x="116" y="220"/>
+        <image height="22" id="Image Blinker" locked="true" name="Blinker.png" width="12" x="244" y="274">
+            <condition source="timeline">
+                <loop end="30" start="0"/>
+                <section end="30" start="15"/>
+            </condition>
+        </image>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery % Green" locked="true" postfix=" %" r="0" size="27" source="battery.percent" style="1" text="Text" width="110" x="263" y="150">
+            <condition source="battery">
+                <section end="100" start="50"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="69" height="70" id="Battery % Orange" locked="true" postfix=" %" r="255" size="27" source="battery.percent" style="1" text="Text" width="110" x="263" y="150">
+            <condition source="battery">
+                <section end="49" start="20"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Battery % Red" locked="true" postfix=" %" r="255" size="27" source="battery.percent" style="1" text="Text" width="110" x="263" y="150">
+            <condition source="battery">
+                <section end="19" start="0"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery Full 100%" locked="true" r="0" size="27" source="none" style="1" text="[##########]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="100" start="100"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 90%" locked="true" r="0" size="27" source="none" style="1" text="[#########.]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="99" start="90"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 80%" locked="true" r="0" size="27" source="none" style="1" text="[########..]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="89" start="80"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 70%" locked="true" r="0" size="27" source="none" style="1" text="[#######...]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="79" start="70"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 60%" locked="true" r="0" size="27" source="none" style="1" text="[######....]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="69" start="60"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 50%" locked="true" r="0" size="27" source="none" style="1" text="[#####.....]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="59" start="50"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="69" height="70" id="Battery 40%" locked="true" r="255" size="27" source="none" style="1" text="[####......]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="49" start="40"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="69" height="70" id="Battery 30%" locked="true" r="255" size="27" source="none" style="1" text="[###.......]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="39" start="30"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="69" height="70" id="Battery 20%" locked="true" r="255" size="27" source="none" style="1" text="[##........]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="29" start="20"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Battery 10%" locked="true" r="255" size="27" source="none" style="1" text="[#.........]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="19" start="10"/>
+            </condition>
+        </text>
+        <text a="248" alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Battery 0%" locked="true" r="255" size="27" source="none" style="1" text="[..........]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="9" start="0"/>
+            </condition>
+        </text>
+    </root>
+    <root height="360" type="ambient-fullcolor" width="360" x="0" y="0">
+        <image height="397" id="Background" locked="true" name="Galaxy_Watch_Background.png" width="397" x="-18" y="-18"/>
+        <text a="245" alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-Bold-4.47.0" g="128" height="119" id="Text" locked="true" r="0" size="28" source="none" style="1" text="nora@watch" width="287" x="-22" y="21"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Time" locked="true" r="255" size="28" source="none" style="0" text="[TIME]" width="110" x="15" y="80"/>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-Bold-4.47.0" g="128" height="119" id="Text2" locked="true" r="0" size="28" source="none" style="1" text="nora@watch" width="287" x="-22" y="226"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Date" locked="true" r="255" size="28" source="none" style="0" text="[DATE]" width="110" x="15" y="115"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Battery" locked="true" r="255" size="28" source="none" style="0" text="[BATT]" width="110" x="15" y="150"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Steps" locked="true" r="255" size="28" source="none" style="0" text="[STEP]" width="110" x="16" y="185"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Heartrate" locked="true" r="255" size="28" source="none" style="0" text="[L_HR]" width="110" x="16" y="220"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Text_Part" locked="true" r="255" size="28" source="none" style="1" text=":~$ now" width="110" x="182" y="45"/>
+        <text alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="255" height="70" id="Text2_Part" locked="true" r="255" size="28" source="none" style="1" text=":~$" width="110" x="154" y="251"/>
+        <digitalclock alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="215" height="70" id="Clock Function" r="255" size="27" style="1" text="HH : mm a" width="232" x="79" y="80"/>
+        <digitalclock alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="144" height="70" id="Date Function" locked="true" r="30" size="27" style="1" text="EEE MMM d yyyy" width="220" x="114" y="115"/>
+        <text a="250" alignment="16777216" b="255" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Steps Function" locked="true" postfix=" steps" r="255" size="27" source="pedometer.step" style="1" text="Text" text_width="5" width="166" x="115" y="185"/>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Heartrate Function" locked="true" postfix=" bpm" r="255" size="27" source="heartrate.recent" style="1" text="Text" text_width="3" width="110" x="116" y="220"/>
+        <image height="22" id="Image Blinker" locked="true" name="Blinker.png" width="12" x="244" y="274">
+            <condition source="timeline">
+                <loop end="30" start="0"/>
+                <section end="900" start="0"/>
+            </condition>
+        </image>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery % Green" locked="true" postfix=" %" r="0" size="27" source="battery.percent" style="1" text="Text" width="110" x="263" y="150">
+            <condition source="battery">
+                <section end="100" start="50"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="69" height="70" id="Battery % Orange" locked="true" postfix=" %" r="255" size="27" source="battery.percent" style="1" text="Text" width="110" x="263" y="150">
+            <condition source="battery">
+                <section end="49" start="20"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Battery % Red" locked="true" postfix=" %" r="255" size="27" source="battery.percent" style="1" text="Text" width="110" x="263" y="150">
+            <condition source="battery">
+                <section end="19" start="0"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery Full 100%" locked="true" r="0" size="27" source="none" style="1" text="[##########]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="100" start="100"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 90%" locked="true" r="0" size="27" source="none" style="1" text="[#########.]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="99" start="90"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 80%" locked="true" r="0" size="27" source="none" style="1" text="[########..]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="89" start="80"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 70%" locked="true" r="0" size="27" source="none" style="1" text="[#######...]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="79" start="70"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 60%" locked="true" r="0" size="27" source="none" style="1" text="[######....]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="69" start="60"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="128" height="70" id="Battery 50%" locked="true" r="0" size="27" source="none" style="1" text="[#####.....]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="59" start="50"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="69" height="70" id="Battery 40%" locked="true" r="255" size="27" source="none" style="1" text="[####......]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="49" start="40"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="69" height="70" id="Battery 30%" locked="true" r="255" size="27" source="none" style="1" text="[###.......]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="39" start="30"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="69" height="70" id="Battery 20%" locked="true" r="255" size="27" source="none" style="1" text="[##........]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="29" start="20"/>
+            </condition>
+        </text>
+        <text alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Battery 10%" locked="true" r="255" size="27" source="none" style="1" text="[#.........]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="19" start="10"/>
+            </condition>
+        </text>
+        <text a="248" alignment="16777216" b="0" bitmap_font="false" custom_font="true" font_name="TerminusTTFWindows-4.47.0" g="0" height="70" id="Battery 0%" locked="true" r="255" size="27" source="none" style="1" text="[..........]" width="200" x="101" y="150">
+            <condition source="battery">
+                <section end="9" start="0"/>
+            </condition>
+        </text>
+    </root>
+</watchface>
